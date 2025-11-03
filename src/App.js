@@ -1,9 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import About from './screen/About.js'
-import Home from './screen/Home.js'
-import Contact from './screen/Contact.js';
-import Help from './screen/Help.js';
+import Comunicao from './screen/Comunicao.js'
+import Home from './screen/Home/Home.js'
+import Sensoriais from './screen/Sensoriais.js';
+import Cognitivo from './screen/Cognitivo.js';
+import InteracaoSocial from './screen/InteracaoSocial.js';
+import Motora from './screen/Motora.js';
 import Login from './screen/Login.js';
 import Register from './screen/Register.js';
 import NavBar from './layout/NavBar.js';
@@ -16,9 +18,11 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/' exact element={<Home />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/contact' element={<Contact />}/>
-          <Route path='/help' element={<Help />}/>
+          <Route path='/comunicacao' element={<Comunicao />}/>
+          <Route path='/sensoriais' element={<Sensoriais />}/>
+          <Route path='/cognitivo' element={<Cognitivo />}/>
+          <Route path='/interacao-social' element={<InteracaoSocial />}/>
+          <Route path='/motora' element={<Motora />}/>
           <Route path='/login' element={<Login />}/>
           <Route path='/register' element={<Register />}/>
         </Routes>

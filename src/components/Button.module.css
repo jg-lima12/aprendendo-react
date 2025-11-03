@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&display=swap');
+
+
+:root{
+    --border: 1px solid red;
+    --eftHoverTrp: #ffffff5b;
+    --eftHoverBck: ;
+    --trs: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+button{
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--trs);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.small{
+    padding: 5px 7px;
+    font-size: 10px;
+    border-radius: 7px !important;
+
+
+}
+
+.medium{
+    padding: 7px 10px;
+}
+
+.large{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.whiteTrp{
+    outline: 1px solid white;
+    outline-offset: -1px;
+    color: white;
+    background-color: transparent;
+}
+
+.redTrp{
+    outline: 1px solid #af0a0a;
+    outline-offset: -1px;
+    color: #af0a0a;
+    background-color: transparent;
+}
+
+.blackTrp{
+    outline: 1px solid black;
+    outline-offset: -1px;
+    color: black;
+    background-color: transparent;
+}
+
+.blueTrp{
+    outline: 1px solid #2e73db;
+    outline-offset: -1px;
+    color: #2e73db;
+    background-color: transparent;
+}
+
+.grayTrp{
+    outline: 1px solid #c2c2c2;
+    outline-offset: -1px;
+    color: #c2c2c2;
+    background-color: transparent;
+}
+
+.whiteTrp:hover, .redTrp:hover, .blackTrp:hover, .grayTrp:hover, .blueTrp:hover{
+    background-color: var(--eftHover);
+    color: #ffffff;
+
+}
+
+.redTrp:hover{
+    color: #db3535 !important;
+}
+
+.blackTrp:hover{
+    color: #5a5a5a !important;
+}
+
+.whiteBck{
+    background-color: #efefef;
+    color: #2e73db;
+}
+
+.blueBck{
+    background-color: #2e73db;
+    color: white;
+}
+
+.blackBck{
+    background-color: black;
+    color: white;
+}
+
+.whiteBck:hover{
+    background-color: rgba(255, 255, 255, 0.452);
+    color: #dfecff;
+}
+
+.blueBck:hover{
+    background-color: #1c54a8;
+}
+
+.blackBck:hover{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+.lineTrp{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.lineTrp::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.lineTrp:hover::after{
+    width: 100%;
+}
+
+
+
+

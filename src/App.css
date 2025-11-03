@@ -1,18 +1,13 @@
-:root{
-  --border: 1px solid red;
-}
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+
 }
 
-main,body{
-  background-color: #525252;
-}
-
-h1{
-  color: white;
+main,body,#root{
+  background-color: #ffffff;
+  width: 100%;
 }
 

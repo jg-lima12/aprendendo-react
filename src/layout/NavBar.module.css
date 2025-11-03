@@ -65,4 +65,5 @@ li{
 .link{
   color: white;
   text-decoration: none;
+  display: flex;
 }

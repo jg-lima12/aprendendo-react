@@ -1,8 +1,7 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import imageLogo from '../img/LogoCCA.png'
-import ButtonTrp from '../components/ButtonsTrp'
-import ButtonBck from '../components/ButtonsBck'
+import Button from '../components/Button'
 import clsx from 'clsx'
 
 export default function NavBar() {
@@ -10,27 +9,60 @@ export default function NavBar() {
         <>
             <header>
                 <div className={styles.cardHeader}>
-                    <div className={styles.logo}>
+                    <Link to='/' className={clsx(styles.link, styles.logo)} >
                         <img src={imageLogo} alt="Logo do Site" className={styles.logoImg} />
                         <h1 className={styles.fontKanit}>CCA</h1>
-                    </div>
+                    </Link>
+
                     <ul>
                         <li>
-                            <Link className={styles.link} to='/'><ButtonTrp content='Home' color='white' borderColor='white' /></Link>
+                            <Link
+                                className={styles.link}
+                                to='/comunicacao'>
+                                <Button version='lineTrp'>Comunicação</Button>
+                            </Link>
                         </li>
                         <li>
-                            <Link className={styles.link} to='/about'><ButtonTrp content='About' color='white' borderColor='white' /></Link>
+                            <Link
+                                className={styles.link}
+                                to='/sensoriais'>
+                                <Button version='lineTrp'>Sensoriais</Button>
+                            </Link>
                         </li>
                         <li>
-                            <Link className={styles.link} to='/contact'><ButtonTrp content='Contact' color='white' borderColor='white' /></Link>
+                            <Link
+                                className={styles.link}
+                                to='/cognitivo'>
+                                <Button version='lineTrp'>Cognitivo</Button>
+                            </Link>
                         </li>
                         <li>
-                            <Link className={styles.link} to='/help'><ButtonTrp content='Help' color='white' borderColor='white' /></Link>
+                            <Link
+                                className={styles.link}
+                                to='/interacao-social'>
+                                <Button version='lineTrp'>Interação Social</Button>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={styles.link}
+                                to='/motora'>
+                                <Button version='lineTrp'>Motora</Button>
+                            </Link>
                         </li>
                         <li>
                             <div className={styles.separation}>
-                                <Link className={clsx(styles.link, styles.register)} to='/register'><ButtonBck content='Register' backgroundColor='trasparent' color='white' borderColor='white' /></Link>
-                                <Link className='link' to='/login' id='#login'><ButtonBck content='Login' color='#2e73db' borderColor='white'/></Link>
+                                <Link
+                                    className={clsx(styles.link, styles.register)}
+                                    to='/register'>
+                                    <Button version='whiteBck' size='medium'>Register</Button>
+                                </Link>
+                                <Link
+                                    className='link'
+                                    to='/login'
+                                    id='#login'>
+                                    <Button version='whiteTrp' size='medium'>Login</Button>
+                                </Link>
                             </div>
                         </li>
                     </ul>
