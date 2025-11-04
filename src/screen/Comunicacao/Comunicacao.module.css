@@ -65,3 +65,22 @@
     margin-left: 4px;
     color: white;
 }
+
+.sectionPresentation {
+    width: 100%;
+    padding: 50px 300px;
+    position: relative;
+    display: flex;
+}
+
+.containerPresentation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.widthP {
+    width: 400px;
+    text-align: justify;
+}
