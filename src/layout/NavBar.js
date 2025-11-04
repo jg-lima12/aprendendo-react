@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import imageLogo from '../img/LogoCCA.png'
-import Button from '../components/Button'
+import Button from '../components/Button/Button'
 import clsx from 'clsx'
 
 export default function NavBar() {

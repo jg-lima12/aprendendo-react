@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import Comunicao from './screen/Comunicao.js'
+import Comunicacao from './screen/Comunicacao/Comunicacao.js'
 import Home from './screen/Home/Home.js'
 import Sensoriais from './screen/Sensoriais.js';
 import Cognitivo from './screen/Cognitivo.js';
@@ -18,7 +18,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/' exact element={<Home />}/>
-          <Route path='/comunicacao' element={<Comunicao />}/>
+          <Route path='/comunicacao' element={<Comunicacao />}/>
           <Route path='/sensoriais' element={<Sensoriais />}/>
           <Route path='/cognitivo' element={<Cognitivo />}/>
           <Route path='/interacao-social' element={<InteracaoSocial />}/>

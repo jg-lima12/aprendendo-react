@@ -1,5 +1,5 @@
 import styles from './Home.module.css'
-import Button from '../../components/Button'
+import Button from '../../components/Button/Button'
 import { Link } from 'react-router-dom'
 import simboloAutismo from '../../img/simboloAutismo.png'
 
@@ -23,7 +23,6 @@ export default function Home() {
                         <p>Cuidar de uma criança autista é uma jornada cheia de descobertas e aprendizados. Cada momento é uma oportunidade de estimular o desenvolvimento, fortalecer vínculos e celebrar conquistas.
                         As brincadeiras, atividades e exercícios — sejam sensoriais, educativos ou lúdicos — são muito mais do que diversão: eles ajudam no desenvolvimento da comunicação, da coordenação motora, da autonomia e na forma como a criança se relaciona com o mundo ao seu redor. Cada descoberta é um tesouro que merece ser valorizado.
                         </p>
-
                         <img src={simboloAutismo} className={styles.simboloTamanho} alt="Simbolo do Autismo" />
                     </div>
                 </div>
