@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&display=swap');
 
 
-:root{
+:root {
     --border: 1px solid red;
     --eftHoverTrp: #ffffff5b;
     --eftHoverBck: ;
@@ -9,7 +9,7 @@
 }
 
 
-button{
+button {
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -17,11 +17,11 @@ button{
     transition: var(--trs);
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-.small{
+.small {
     padding: 5px 7px;
     font-size: 10px;
     border-radius: 7px !important;
@@ -29,93 +29,106 @@ button:hover{
 
 }
 
-.medium{
+.medium {
     padding: 7px 10px;
 }
 
-.large{
+.large {
     padding: 10px 20px;
     font-size: 20px;
 }
 
-.whiteTrp{
+.whiteTrp {
     outline: 1px solid white;
     outline-offset: -1px;
     color: white;
     background-color: transparent;
 }
 
-.redTrp{
+.redTrp {
     outline: 1px solid #af0a0a;
     outline-offset: -1px;
     color: #af0a0a;
     background-color: transparent;
 }
 
-.blackTrp{
+.blackTrp {
     outline: 1px solid black;
     outline-offset: -1px;
     color: black;
     background-color: transparent;
 }
 
-.blueTrp{
+.blueTrp {
     outline: 1px solid #2e73db;
     outline-offset: -1px;
     color: #2e73db;
     background-color: transparent;
 }
 
-.grayTrp{
+.grayTrp {
     outline: 1px solid #c2c2c2;
     outline-offset: -1px;
     color: #c2c2c2;
     background-color: transparent;
 }
 
-.whiteTrp:hover, .redTrp:hover, .blackTrp:hover, .grayTrp:hover, .blueTrp:hover{
+.whiteTrp:hover,
+.redTrp:hover,
+.blackTrp:hover,
+.grayTrp:hover,
+.blueTrp:hover {
     background-color: var(--eftHover);
     color: #ffffff;
 
 }
 
-.redTrp:hover{
+.redTrp:hover {
     color: #db3535 !important;
 }
 
-.blackTrp:hover{
+.blackTrp:hover {
     color: #5a5a5a !important;
 }
 
-.whiteBck{
+.whiteBck {
     background-color: #efefef;
     color: #2e73db;
 }
 
-.blueBck{
+.blueBck {
     background-color: #2e73db;
     color: white;
 }
 
-.blackBck{
+.blackBck {
     background-color: black;
     color: white;
 }
 
-.whiteBck:hover{
+.whiteBck:hover {
     background-color: rgba(255, 255, 255, 0.452);
     color: #dfecff;
 }
 
-.blueBck:hover{
+.blueBck:hover {
     background-color: #1c54a8;
 }
 
-.blackBck:hover{
+.blackBck:hover {
     background-color: rgba(0, 0, 0, 0.486);
 }
 
-.lineTrp{
+.letterTrp {
+    background-color: transparent;
+    color: white;
+}
+
+.letterTrp:hover {
+    background-color: var(--eftHoverTrp);
+}
+
+.lineTrp {
     background-color: transparent;
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
@@ -123,7 +136,7 @@ button:hover{
     transition: transform 0.5s ease;
 }
 
-.lineTrp::after{
+.lineTrp::after {
     content: '';
     position: absolute;
     background-color: white;
@@ -135,10 +148,6 @@ button:hover{
     transition: width 0.3s ease;
 }
 
-.lineTrp:hover::after{
+.lineTrp:hover::after {
     width: 100%;
 }
-
-
-
-

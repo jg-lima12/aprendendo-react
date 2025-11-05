@@ -8,13 +8,17 @@ import InteracaoSocial from './screen/InteracaoSocial.js';
 import Motora from './screen/Motora.js';
 import Login from './screen/Login.js';
 import Register from './screen/Register.js';
-import NavBar from './layout/NavBar.js';
+
+
+import NavBar from './layout/NavBar/NavBar.js';
+import MenuBar from './layout/MenuBar/MenuBar.js';
 
 function App() {
 
   return (
     <>
       <Router>
+        <MenuBar />
         <NavBar />
         <Routes>
           <Route path='/' exact element={<Home />}/>
