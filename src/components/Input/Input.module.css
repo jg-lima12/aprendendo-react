@@ -1,0 +1,66 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.title{
+    font-size: large;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    transition: all;
+    background-color: transparent;
+
+}
+
+.button:focus{
+    outline: none;
+}
+
+.large {
+    width: 300px;
+    padding: 10px 20px;
+}
+
+.large::placeholder {
+    font-size: 15px;
+}
+
+.medium {
+    width: 180px;
+    padding: 5px 10px;
+}
+
+.medium::placeholder {
+    font-size: 10px;
+}
+
+.small {
+    width: 100px;
+    padding: 3px 5px;
+}
+
+.small::placeholder {
+    font-size: 7px;
+}
+
+.white {
+    border: 2px solid #efefef;
+    color: white;
+}
+
+.white::placeholder {
+    color: rgb(172, 172, 172);
+}
+
+.gray {
+    border: 2px solid #9c9c9c;
+}
+
+.gray::placeholder{
+    color: #6e6e6e;
+}

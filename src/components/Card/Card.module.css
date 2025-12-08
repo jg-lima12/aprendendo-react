@@ -1,0 +1,30 @@
+.card {
+    background-color: rgb(224, 224, 224);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2  px;
+    width: 13vw;
+    height: 5vh;
+}
+
+.body h2,
+.body span {
+    color: black;
+}
+
+.body h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.body span {
+    font-size: 13px;
+    font-weight: 300;
+}

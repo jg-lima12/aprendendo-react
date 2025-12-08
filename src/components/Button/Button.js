@@ -2,7 +2,7 @@ import styles from './Button.module.css'
 import clsx from 'clsx'
 
 
-export default function Button({ children, version = 'whiteTrp', event, size = 'medium'}) {
+export default function Button({ style, children, version = 'whiteTrp', onClick, size = 'medium'}) {
     const classButton = clsx(
         styles.button,
         styles[version],
@@ -11,7 +11,7 @@ export default function Button({ children, version = 'whiteTrp', event, size = '
 
     return (
         <>
-            <button onClick={event} className={classButton}>{children}</button>
+            <button onClick={onClick} className={classButton} style={style} >{children}</button>
         </>
     )
 }
